@@ -2,10 +2,12 @@ import os
 import requests
 import urllib.request
 import sys
+import time
 
 
 url = ""
 url = sys.argv[1]
+time.sleep(10)
 
 try:
     fp = urllib.request.urlopen(url)
