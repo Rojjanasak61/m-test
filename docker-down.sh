@@ -14,44 +14,6 @@ echo $list_file
 echo "starting .."
 
 cd CVE-2021-22205
-docker-compose up -d
-cd ..
-
-cd CVE-2021-28073
-docker-compose up -d
-cd ..
-
-cd CVE-2021-28164
-docker-compose up -d
-cd ..
-
-cd CVE-2021-42013
-docker-compose up -d
-cd ..
-
-cd CVE-2021-42342
-docker-compose up -d
-cd ..
-
-echo "success"
-
-rojjanasak@skynet:~/preaw$ cat stop.sh
-#!/bin/bash
-
-current_dir=$(pwd)
-list_file=$(ls)
-
-current_dir=$(pwd)
-parentdir="$(dirname "$current_dir")"
-
-check=0
-
-echo $list_file
-
-
-echo "starting .."
-
-cd CVE-2021-22205
 docker-compose down
 cd ..
 
