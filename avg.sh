@@ -4,7 +4,7 @@ for i in {1..10}
 do
     start_time=$(date +%s.%N)
 
-    ./app.py $1
+    python3 app.py $1
 
     end_time=$(date +%s.%N)
     run_time=$(echo "$end_time - $start_time" | bc)
