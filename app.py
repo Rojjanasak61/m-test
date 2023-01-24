@@ -7,7 +7,33 @@ import time
 
 url = ""
 url = sys.argv[1]
-time.sleep(10)
+for i in range(0,10):
+    print("  ")
+    for i in range(0,10):
+        print(" ")
+        for i in range(0,10):
+            print(" ")
+
+for i in range(0,10):
+    print("  ")
+    for i in range(0,10):
+        print(" ")
+        for i in range(0,10):
+            print(" ")
+
+for i in range(0,10):
+    print("  ")
+    for i in range(0,10):
+        print(" ")
+        for i in range(0,10):
+            print(" ")
+
+for i in range(0,10):
+    print("  ")
+    for i in range(0,10):
+        print(" ")
+        for i in range(0,10):
+            print(" ")
 
 try:
     fp = urllib.request.urlopen(url)
