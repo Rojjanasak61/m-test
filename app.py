@@ -7,32 +7,11 @@ import time
 
 url = ""
 url = sys.argv[1]
-for i in range(0,10):
+for i in range(0,10000):
     print("  ")
-    for i in range(0,10):
+    for i in range(0,1000):
         print(" ")
-        for i in range(0,10):
-            print(" ")
-
-for i in range(0,10):
-    print("  ")
-    for i in range(0,10):
-        print(" ")
-        for i in range(0,10):
-            print(" ")
-
-for i in range(0,10):
-    print("  ")
-    for i in range(0,10):
-        print(" ")
-        for i in range(0,10):
-            print(" ")
-
-for i in range(0,10):
-    print("  ")
-    for i in range(0,10):
-        print(" ")
-        for i in range(0,10):
+        for i in range(0,1000):
             print(" ")
 
 try:
