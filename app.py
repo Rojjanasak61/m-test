@@ -7,7 +7,7 @@ import time
 
 url = ""
 url = sys.argv[1]
-time.sleep(10)
+# time.sleep(10)
 
 try:
     fp = urllib.request.urlopen(url)
