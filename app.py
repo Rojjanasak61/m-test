@@ -7,12 +7,7 @@ import time
 
 url = ""
 url = sys.argv[1]
-for i in range(0,10000):
-    print("  ")
-    for i in range(0,1000):
-        print(" ")
-        for i in range(0,1000):
-            print(" ")
+time.sleep(10)
 
 try:
     fp = urllib.request.urlopen(url)

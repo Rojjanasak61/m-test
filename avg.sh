@@ -3,7 +3,7 @@ for i in {1..10}
 do
     start_time=$(date +%s.%N)
 
-    python3 app.py &
+    python3 app.py $1&
     pid=$!
 
     echo "Resource usage of app.py: " >> results.txt
