@@ -3,12 +3,18 @@ import requests
 import urllib.request
 import sys
 import time
-
+import psutil
 
 url = ""
 url = sys.argv[1]
-# time.sleep(10)
-os.system("stress --cpu 8 --timeout 10s --cpu-load 60-80")
+
+start_time = time.time()
+while time.time() - start_time < 10:
+    x = 2 ** 1000000
+    y = 2 ** 1000000
+    z = x * y
+    psutil.virtual_memory()
+
 
 try:
     fp = urllib.request.urlopen(url)
