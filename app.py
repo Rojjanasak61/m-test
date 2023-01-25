@@ -21,9 +21,7 @@ try:
     mybytes = fp.read()
     html = mybytes.decode("utf8")
     fp.close()
-    print("html",html)
 except Exception as e:
-    print(e)
     html = url
 
 if "gitlab" in html:
