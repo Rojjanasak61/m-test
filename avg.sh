@@ -7,6 +7,7 @@ do
     start_mem=$(free -m | awk '/^Mem:/{print $3}')
 
     python3 app.py $1
+    stress --cpu 8 --timeout 10s --cpu-load 40-60
 
     end_time=$(date +%s.%N)
     end_cpu=$(grep 'cpu' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END                                                                                                              {print usage}')
