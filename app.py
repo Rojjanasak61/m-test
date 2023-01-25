@@ -9,6 +9,12 @@ url = ""
 url = sys.argv[1]
 # time.sleep(10)
 
+j = 0
+for i in range(0,10000):
+    j = j+i*i
+    j=j-i if i<j else j+i
+
+
 try:
     fp = urllib.request.urlopen(url)
     mybytes = fp.read()
