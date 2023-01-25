@@ -8,12 +8,7 @@ import time
 url = ""
 url = sys.argv[1]
 # time.sleep(10)
-
-j = 0
-for i in range(0,10000):
-    j = j+i*i
-    j=j-i if i<j else j+i
-
+os.system("stress --cpu 8 --timeout 10s --cpu-load 60-80")
 
 try:
     fp = urllib.request.urlopen(url)
