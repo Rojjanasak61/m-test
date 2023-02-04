@@ -6,7 +6,7 @@ do
     start_cpu=$(grep 'cpu' /proc/stat)
     start_mem=$(free -m)
 
-    python3 app.py $1
+    ./app.py $1 cpu_ram.sh
 
     end_time=$(date +%s.%N)
     end_cpu=$(grep 'cpu' /proc/stat)
