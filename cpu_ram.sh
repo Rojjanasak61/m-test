@@ -1,3 +1,9 @@
 #!/bin/bash
-sar 1 1 -P ALL >> cpu-$1.txt
-sar -r 1 1 -P ALL >> ram-$1.txt
+filename="02-mTest"
+for i in {1..10}
+do
+    printf "Run %d:\n" $i >> $filename.txt
+    sar 1 1 -P ALL >> $filename.txt
+    sar -r 1 1 -P ALL >> $filename.txt
+    sleep 10
+done
