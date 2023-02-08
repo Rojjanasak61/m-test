@@ -5,12 +5,15 @@ import urllib.request
 import sys
 import time
 import psutil
+import random
 
 url = ""
 url = sys.argv[1]
 
 start_time = time.time()
-while time.time() - start_time < 10:
+random_number = random.uniform(4, 8)
+
+while time.time() - start_time < random_number:
     x = 2 ** 1000000
     y = 2 ** 1000000
     z = x * y
