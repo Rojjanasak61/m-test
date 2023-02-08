@@ -5,5 +5,6 @@ do
     printf "Run %d:\n" $i >> $filename.txt
     sar 1 1 -P ALL >> $filename.txt
     sar -r 1 1 -P ALL >> $filename.txt
-    sleep 10
+    echo "Loop $i"
 done
+
