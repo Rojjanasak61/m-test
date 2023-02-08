@@ -3,7 +3,8 @@ filename="01-mTestTime"
 # for i in {1..14}
 # do
 start_time=$(date +%s.%N)
-printf "Run %d:\n" $i >> $filename.txt
+# printf "Run %d:\n" $i >> $filename.txt
+printf "Run 1:\n" >> $filename.txt
 
 ./app.py "$1"
 
