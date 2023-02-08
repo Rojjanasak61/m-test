@@ -1,5 +1,5 @@
 #!/bin/bash
-filename="01-mTest"
+filename="01-mTestTime"
 # for i in {1..14}
 # do
 start_time=$(date +%s.%N)
