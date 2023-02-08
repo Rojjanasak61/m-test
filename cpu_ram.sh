@@ -1,5 +1,5 @@
 #!/bin/bash
-filename="02-mTest"
+filename="01-mTest"
 for i in {1..14}
 do
     printf "Run %d:\n" $i >> $filename.txt
