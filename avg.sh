@@ -1,6 +1,6 @@
 #!/bin/bash
 filename="01-mTest"
-for i in {1..10}
+for i in {1..14}
 do
     start_time=$(date +%s.%N)
     printf "Run %d:\n" $i >> $filename.txt
